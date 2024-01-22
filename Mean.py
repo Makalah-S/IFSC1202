@@ -1,4 +1,4 @@
-s = int(input("How Many Numbers?"))
+s = int(input("How Many Numbers?")) ## Program Finds the Mean of a Set of Numbers, Practice for User Input
 n = s
 v = 0
 
