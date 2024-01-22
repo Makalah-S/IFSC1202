@@ -1,9 +1,9 @@
-s = 2
+s = int(input("How Many Numbers?"))
 n = s
 v = 0
 
 while n > 0:
-    v = 5 + v
+    v = int(input("What's the Number?")) + v
     n = n - 1
 
 a = v/s
