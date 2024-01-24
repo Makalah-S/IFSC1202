@@ -9,3 +9,6 @@ if x != 1:
     print("Yep that's a 1")
 else:
     print("Hi Maevelyn")
+
+from math import pi
+print(pi)
