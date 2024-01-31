@@ -1,17 +1,20 @@
 x = float(input("First Number: "))
+equation = input("Enter Operator (+, -, *, /): ")
 y = float(input("Second Number: "))
-equation = input("Choose from the Following: +, -, *, /")
 answer = 0
 
 if equation == '+':
     answer = x + y
 elif equation == '-':
     answer = x - y
-elif equation == "*":
+elif equation == '*':
     answer = x * y
 elif equation == '/':
     answer = x/y
 else:
-    print("Invalid Operation")
+    answer = "INVALID"
 
-print(answer)
+if answer == "INVALID":
+    print("Invalid Operation")
+else:
+    print("{} {} {} = {}".format(x, equation, y, answer))
