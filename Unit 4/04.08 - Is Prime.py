@@ -6,4 +6,3 @@ for x in range(2,n//2+1):
         break
 else:
         print("PRIME")
-
