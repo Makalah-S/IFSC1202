@@ -5,12 +5,10 @@ print("Prime Numbers Between {} and {}" .format(a,b))
 def findPrime(n):
     for x in range(2,n//2+1):
         if n%x == 0:
-            #print("COMPOSITE")
-            return False
+            return False #For Composites
             break
     else:
-            #print("PRIME")
-            return True
+            return True #For Primes
 
 for i in range(a,b):
      if findPrime(i) == True:
