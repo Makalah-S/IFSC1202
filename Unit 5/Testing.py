@@ -1,12 +1,16 @@
-x = int(input("Enter Number 1000: "))
-i = 0
 
-print(1000//10)
-print(100//10)
-print(10//10)
-print(0/10)
+lenght = 3
+exponet = 3
+input = 153
+numSum = 0
 
-while x > 0: ##Counts Digits
-    x = x//10
-    i += 1
-    print(i)
+## 1 + 
+
+while lenght > 0:
+    y = 10 ** (lenght - 1)
+    indnumber = input//y
+    numSum += indnumber ** exponet
+    print(numSum)
+    input -= indnumber * y
+    lenght -= 1
+
