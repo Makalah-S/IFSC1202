@@ -7,7 +7,7 @@ def findDigits(x): ##As of 09:58 2.12, Works as Intended. Not told to print.
 
 def isSpecial(input,lenght):
     exponet =  lenght
-    orgi = input
+    copy = input
     numSum = 0
     while lenght > 0:
         y = 10 ** (lenght - 1)
@@ -16,7 +16,7 @@ def isSpecial(input,lenght):
         input -= indnumber * y
         lenght -= 1
     else:
-        if numSum == orgi:
+        if numSum == copy:
             return True
         else:
             return False
