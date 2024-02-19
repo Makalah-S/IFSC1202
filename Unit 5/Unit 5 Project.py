@@ -5,7 +5,7 @@ def findDigits(x): ##As of 09:58 2.12, Works as Intended. Not told to print.
         i += 1
     return i
 
-def isSpecial(input,lenght):
+def isSpecial(input,lenght): 
     exponet =  lenght
     copy = input
     numSum = 0
