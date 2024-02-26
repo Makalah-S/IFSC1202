@@ -37,3 +37,10 @@ def prime_composite(n):
             break
     else:
         print("PRIME")
+
+
+def readFileLines(DOCUMENT):
+    n = DOCUMENT.readline()
+    while n != "":
+        print(n)
+        n = DOCUMENT.readline()
