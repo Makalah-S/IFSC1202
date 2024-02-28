@@ -1,3 +1,9 @@
+input = open("07.Project Angles Input.txt")
+output = open("07.Project Angles Output.txt", "a")
+
+STRING = input.readline()
+COUNT = 0
+
 def decimalDegree(ddmmss):
     degSign = ddmmss.find(chr(176))
     minSign = ddmmss.find("'")
@@ -9,6 +15,14 @@ def decimalDegree(ddmmss):
     return decimalDegree
 
 
-print(decimalDegree("5"+chr(176)+"0"+"'" +"0" + '"'))
+while STRING != "":
+    RESULTS = decimalDegree(STRING)
+    output.write(str(RESULTS)+"\n")
+    STRING = input.readline()
+    COUNT += 1
+else:
+    print("{} Records Processed." .format(COUNT))
 
+input.close()
+output.close()
     
