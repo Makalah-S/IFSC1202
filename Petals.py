@@ -44,3 +44,12 @@ def readFileLines(DOCUMENT):
     while n != "":
         print(n)
         n = DOCUMENT.readline()
+
+        again = True
+
+while again == True:
+    redo = input("yep")
+    if redo == 'yep':
+        again = True
+    else:
+        again = False
