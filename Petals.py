@@ -53,3 +53,14 @@ while again == True:
         again = True
     else:
         again = False
+
+
+def countDocument(document):
+    for x in range(len(document)):
+        x += 1
+    wordCount = x
+    lines = document.split("\n")
+    for i in range(len(lines)):
+        i += 1
+    lineCount = i
+    print("Word Count: {} Line Count: {}" .format(wordCount, lineCount))
