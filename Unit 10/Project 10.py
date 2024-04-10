@@ -66,7 +66,7 @@ for i in range(len(students)):
     z = letterGrade(y)
 
     print("{:>10s}{:>15s}{:>20s}{:>20s}{:>20s}{:>20s}".format("First Name", "Last Name", "ID Number", "Running Average","Semester Average", "Letter Grade"))
-    print("{:>10s}{:>15s}{:>20s}{:>20f}{:>20f}{:>20s}".format(currentStudent.firstName, currentStudent.lastName, currentStudent.tnumber,x,y,z))
+    print("{:>10s}{:>15s}{:>20s}{:>20.2f}{:>20.2f}{:>20s}".format(currentStudent.firstName, currentStudent.lastName, currentStudent.tnumber,x,y,z))
     
     
 
